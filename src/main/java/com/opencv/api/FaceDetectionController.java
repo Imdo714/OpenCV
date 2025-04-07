@@ -16,7 +16,7 @@ import java.io.IOException;
 @RestController
 public class FaceDetectionController {
 
-    private final FaceDetectionService faceDetectionService;
+    private final FaceDetectionServiceImpl faceDetectionService;
 
     @PostMapping("/face")
     public ResponseEntity<byte[]> facesDetect(@RequestParam("file") MultipartFile file) {

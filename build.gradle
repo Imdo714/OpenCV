@@ -30,8 +30,10 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
+	// thymeleaf
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	// opencv
-	implementation 'org.openpnp:opencv:4.5.5-1'
+	implementation 'org.openpnp:opencv:4.9.0-0'
 }
 
 tasks.named('test') {

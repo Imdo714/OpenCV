@@ -5,7 +5,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.opencv.core.*;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.objdetect.CascadeClassifier;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 
 
@@ -13,7 +12,7 @@ import java.io.IOException;
 
 @Slf4j
 @Component
-public class OpenCVUtil implements FaceDetectionProcessor{
+public class OpenCVUtil implements FaceDetectionService {
 
     private CascadeClassifier faceCascade;
 
